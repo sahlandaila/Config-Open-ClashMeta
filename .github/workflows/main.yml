@@ -30,11 +30,11 @@ jobs:
           rm -fr GeoIP.dat
           rm -fr GeoSite.dat
           echo "Downloading Country.mmdb ..."
-          wget https://github.com/rtaserver/meta-rules-dat/releases/download/latest/country.mmdb -O Country.mmdb
+          wget https://github.com/sahlandaila/meta-rules-dat/releases/download/latest/country.mmdb -O Country.mmdb
           echo "Downloading GeoIp.dat ..."
-          wget https://github.com/rtaserver/meta-rules-dat/releases/download/latest/geoip.dat -O GeoIP.dat
+          wget https://github.com/sahlandaila/meta-rules-dat/releases/download/latest/geoip.dat -O GeoIP.dat
           echo "Downloading GeoSite.dat ..."
-          wget https://github.com/rtaserver/meta-rules-dat/releases/download/latest/geosite.dat -O GeoSite.dat
+          wget https://github.com/sahlandaila/meta-rules-dat/releases/download/latest/geosite.dat -O GeoSite.dat
           chmod +x Country.mmdb
           chmod +x GeoIP.dat
           chmod +x GeoSite.dat
@@ -79,7 +79,7 @@ jobs:
           body: |
             ### Update Config ClashMeta - RTA SERVER
             Build date: ${{ env.BUILDTIME }}
-            See [here](https://github.com/rtaserver/meta-rules-dat) for more detail feature and other information.
+            See [here](https://github.com/sahlandaila/meta-rules-dat) for more detail feature and other information.
             - Auto Update GeoIP
             - Auto Update GeoSite
 
